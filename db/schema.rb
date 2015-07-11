@@ -58,12 +58,12 @@ ActiveRecord::Schema.define(version: 20150711100105) do
   end
 
   create_table "rewards", force: true do |t|
-    t.integer "link_visit_id"
-    t.integer "order_id"
-    t.integer "offer_id"
-    t.float   "value"
-    t.string  "state"
-    t.integer "hold_period"
+    t.integer  "link_visit_id"
+    t.integer  "order_id"
+    t.integer  "offer_id"
+    t.float    "value"
+    t.string   "state"
+    t.datetime "hold_period_end"
   end
 
 end

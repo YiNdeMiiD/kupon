@@ -17,4 +17,5 @@ gem 'spring',        group: :development
 gem 'state_machine'
 gem 'aasm'
 gem 'pg'
+gem 'clockwork'
 

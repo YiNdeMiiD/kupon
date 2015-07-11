@@ -5,8 +5,8 @@ class CreateReward < ActiveRecord::Migration
       t.integer :order_id
       t.integer :offer_id
       t.float :value
-      t.string :state
-      t.integer :hold_period
+      t.string :state, default: 'on_hold'
+      t.datetime :hold_period_end
     end
   end
 end

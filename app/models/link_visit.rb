@@ -17,7 +17,5 @@ class LinkVisit < ActiveRecord::Base
     redirect_link = offer.url_head + '?sub_id=' + sub_id
     save!
 	end
-    
-
 
 end

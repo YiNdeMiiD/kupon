@@ -12,7 +12,8 @@ class Order < ActiveRecord::Base
   #full_value
 	#system_reward
 
-  def trigger
+  def trigger( params )
+  	link_visit = LinkVisit.find_by( params[ :sub_id ] )
     #creates new order
     init_reward
   end
