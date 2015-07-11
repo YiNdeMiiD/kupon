@@ -7,9 +7,8 @@ class Reward < ActiveRecord::Base
   belongs_to :offer
 
 	#id
-	#conversion_id
+	#link_visit_id
 	#order_id
-	#conversion_id
 	#offer_id
 	#value
 	#state
@@ -29,8 +28,9 @@ class Reward < ActiveRecord::Base
 
   end    
 
+  def initialize( offer, system_reward )
+    #creates new reward
+    conversion.customer.add_balance_on_hold( system_reward )
   end
-
-
 
 end

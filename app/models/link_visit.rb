@@ -8,8 +8,16 @@ class LinkVisit < ActiveRecord::Base
 	#sub_id
 	#customer_id
 	#offer_id
-	#partner_shop_id??
 	#redirect_link
-	#state!!!
-	#value
+
+	def initialize( customer, offer )
+    customer_id = customer.id
+    sub_id = customer.user_id
+    offer_id = offer.id
+    redirect_link = offer.url_head + '?sub_id=' + sub_id
+    save!
+	end
+    
+
+
 end

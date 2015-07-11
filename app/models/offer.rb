@@ -4,6 +4,7 @@ class Offer < ActiveRecord::Base
 	has_many  :link_visits
 
 	#id
+	#name
 	#shop_id
 	#reward_kind
 	#hold_period
